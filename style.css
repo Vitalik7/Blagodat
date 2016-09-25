@@ -1,17 +1,127 @@
 body{
-    margin: 0;
 }
+
+
+
+.nav{
+    background: #8B3626;
+    opacity: 0.7;
+}
+.nav li { float: left}
+.nav li a, #touch-menu{
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+.nav li a:hover,
+#touch-menu:hover{
+    color: #8B3626;
+
+}
+.nav li a:active{
+    color: black;
+
+}
+#touch-menu{
+    display: none;
+}
+
+
+.nav{
+    background: #8B3626;
+    opacity: 0.7;
+}
+.nav li { float: left}
+.nav li a, #touch-men{
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+.nav li a:hover,
+#touch-men:hover{
+    color: #8B3626;
+
+}
+.nav li a:active{
+    color: black;
+
+}
+
+
+
+
+.nav1{
+
+}
+.nav1 li { float: left}
+.nav1 li a, #touch-menu1{
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+.nav1 li a:hover,
+#touch-menu1:hover{
+
+
+}
+.nav1 li a:active{
+    color: black;
+
+}
+#touch-menu1{
+    display: none;
+}
+
+
+.nav1{
+    background: #8B3626;
+    opacity: 0.7;
+}
+.nav1 li { float: left}
+.nav1 li a, #touch-men1{
+    display: block;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+.nav1 li a:hover,
+#touch-men1:hover{
+    color: #8B3626;
+
+}
+.nav1 li a:active{
+    color: black;
+
+}
+
+
+
+
+
+
+
+
+/* --------- header--------*/
+
+
+
+
+
 .header{
 
     height: 900px; /* Высота блока */
     width: 100%; /* Ширина блока */
-    background: url(images/chorch.jpg) ;
+    background: url(images/chorch.jpg)  ;
+
 
 }
-
-
-
-
 
 
 
@@ -26,9 +136,10 @@ body{
 
 }
 #blogs_1 h4{
+    float: left;
     padding: 0% 3%;
     margin: 1.2% 0%;
-    position: absolute;
+
 
 }
 
@@ -92,7 +203,6 @@ body{
 }
 
 #blogs_2 li {
-    padding: 0% 1%;
     height: 35px;
     float: right; /*Размещаем список горизонтально для реализации меню*/
 }
@@ -120,19 +230,10 @@ body{
 #blogs_2 button:active { background: linear-gradient(#8B3626, #8B3626) #8B3626; }
 
 
-#box{
-    padding: 10% 0%;
-}
-
 #name{
     color: white;
     font-size: 50px;
     text-align: center;
-
-}
-#name h1{
-   /* border-bottom: 3px solid white;*/
-
 
 }
 
@@ -192,9 +293,13 @@ body{
 }
 #btn button{
     bottom: 0px;
-    margin: -10% 0% ;
+    margin: -13% 0% ;
 }
-/* --------------------------------------------------- */
+/* --------------------end header------------------------------- */
+#box{
+    padding: 10% 0%;
+}
+/* ------------------ header_bottom-----------*/
 
 #header_bottom{
     font-size: 12px;
@@ -250,6 +355,10 @@ body{
 #header_bottom button:active {
     color: white; }
 
+/* ------------------ end header_bottom-----------*/
+
+/* ------------------ about_us -----------*/
+
 .about_us{
     text-align: center;
     padding: 0% 0%;
@@ -275,6 +384,7 @@ body{
     overflow: hidden;
 }
 .box {
+
     position: relative;
     left: 9%;
     width: 26%;
@@ -299,10 +409,9 @@ body{
 #box_3 img {
     border: 5px solid #D3D3D3;
     text-decoration: none;
+    width: 100%;
+    height: auto;
 
-}
-#box_3 img#img_1 {
-    height: 180px;
 }
 
 #box_3 img:hover{
@@ -312,7 +421,7 @@ body{
 
     color: #FF6347;
 }
-.ask_pastor{
+.ask_pastor1{
     padding: 0% 2%;
     top: 80px;
     right: 80px;
@@ -321,10 +430,10 @@ body{
     float: right;
 
 }
-.ask_pastor a{
+.ask_pastor1 a{
     color: #FF6347;
 }
-.ask_pastor button{
+.ask_pastor1 button{
     display: inline-block;
     text-decoration: none;
     outline: none;
@@ -334,12 +443,45 @@ body{
     border-color: #FF6347  ;
     border-radius: 20px;
 }
-.ask_pastor button:active{
+.ask_pastor1 button:active{
     background: #8B3626;
     color: white;
     border-color: #8B3626;
 
 }
+
+.ask_pastor2{
+    padding: 0% 2%;
+    top: 80px;
+    right: 80px;
+    color:#FF6347;
+    position: relative;
+    float: right;
+
+}
+.ask_pastor2 a{
+    color: #FF6347;
+}
+.ask_pastor2 button{
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    padding: .7em 2em;
+    background-color: white;
+    border-style: solid;
+    border-color: #FF6347  ;
+    border-radius: 20px;
+}
+.ask_pastor2 button:active{
+    background: #8B3626;
+    color: white;
+    border-color: #8B3626;
+
+}
+
+/* ------------------ end about_us -----------*/
+
+/* ------------------ broadcasting -----------*/
 
 .broadcasting{
     text-align: center;
@@ -392,18 +534,40 @@ body{
     right: 370px;
     bottom: 25px;
 }
-.broadcasting video#small{
+.broadcasting video#small_1{
     width:200px;
     height:90px;
 }
-.small_video video{
+.small_1_video video{
     float: right;
-    margin: -7% 0%;
+    margin: -7.5% 0%;
     position: relative;
     bottom: 210px;
     right: 436px;
 }
-
+.broadcasting video#small_2{
+    width:200px;
+    height:90px;
+}
+.small_2_video video{
+    float: right;
+    margin: 0.5% 0%;
+    position: relative;
+    bottom: 210px;
+    right: 436px;
+}
+.broadcasting video#small_3{
+    width:200px;
+    height:90px;
+}
+.small_3_video video{
+    float: right;
+    margin: 8.5% -15.7%;
+    position: relative;
+    bottom: 210px;
+    right: 436px;
+}
+/* ------------------ broadcasting -----------*/
 
 /* ------- latest news ----------------- */
 
@@ -420,21 +584,29 @@ body{
 }
 .news{
     height: 200px;
+    width: 100%;
+
 
 }
+
+
 .new1{
+    display: inline-block;
+    height: auto;
     margin: 0% 1%;
     padding: 1.2% 0%;
     float: left;
     background:#F5F5F5;
     color: black;
     width: 26%;
-    height: 150px;
+    position: relative;
+    left: 120px;
+
 
 }
 .new1 img{
-    height: 120px;
-    width: 140px;
+    display: inline-block;
+    height: auto;
     position: relative;
     left: 10px;
     float: left;
@@ -468,18 +640,21 @@ body{
 }
 
 .new2{
+    display: inline-block;
+    height: auto;
     margin: 0% 1%;
     padding: 1.2% 0%;
     float: left;
     background:#F5F5F5;
     color: black;
     width: 26%;
-    height: 150px;
+    position: relative;
+    left: 115px;
 
 }
 .new2 img{
-    height: 120px;
-    width: 140px;
+    display: inline-block;
+    height: auto;
     position: relative;
     left: 10px;
     float: left;
@@ -513,18 +688,22 @@ body{
 }
 
 .new3{
+    display: inline-block;
+    height: auto;
     margin: 0% 1%;
     padding: 1.2% 0%;
-    float: left;
     background:#F5F5F5;
     color: black;
     width: 26%;
-    height: 150px;
+    float: right;
+    position: relative;
+    right: 95px;
+
 
 }
 .new3 img{
-    height: 120px;
-    width: 140px;
+    display: inline-block;
+    height: auto;
     position: relative;
     left: 10px;
     float: left;
@@ -557,7 +736,10 @@ body{
     transition: 0.2s;
 }
 
+
 /* ------- end latest news ----------------- */
+
+/* ------------------ contact -----------*/
 
 .contact{
     text-align: center;
@@ -584,9 +766,9 @@ form input{
 form textarea{
     width: 49%;
     padding: 1% 1%;
-    position: relative;
     height: 150px;
     resize: none;
+    float: none;
 }
 
 .pluso{
@@ -623,4 +805,147 @@ form textarea{
     position: relative;
     top: 75px;
     color: white;
+}
+
+/* ------------------ end contact -----------*/
+
+
+/*------------ media----------------*/
+
+/*------  max-width:1016px   ------*/
+@media screen and (max-width:1016px){
+    .nav {display: none}
+    .nav li {float: none}
+    .nav li a {
+        width: auto;
+        color: black;
+        text-align: center;
+    }
+    #touch-menu,#blogs_1, #blogs_2{display: block}
+    #blogs_1 ul {height: auto; }
+    #blogs_1 li  {float: left; display: inline-block; width: 100%; }
+    #blogs_1 li button { margin: 0}
+    #blogs_1 h4 {text-align: center; width: 100%; background: #FF6347; margin: 0; padding: 2% 0% }
+
+    #blogs_2 li  {float: left; display: inline-block; width: 100%; height: auto; }
+    #blogs_2 ul {height: auto; }
+    #blogs_2 li a{float: none}
+    #blogs_2 li button { margin: 0;  }
+
+    #name h1 {font-size: 35px}
+    #text p{ font-size: 18px }
+    #meeting_schedule {height: auto}
+    #meeting_schedule h2,h3 {font-size: 20px}
+
+    .nav1 {display: none}
+    .nav1 li {float: none}
+    .nav1 li a {
+        width: auto;
+        color: black;
+        text-align: center;
+    }
+    #touch-menu1,#header_bottom{display: block}
+    #header_bottom ul {height: auto; background: transparent }
+    #header_bottom li  {float: left; display: inline-block; width: 100%; height: auto }
+    #header_bottom button { margin: 0}
+    #header_bottom h4 {text-align: center; width: 100%;  margin: 0; padding: 0% 0% }
+    #header_bottom li button { margin: 0;  }
+
+    .about_us h1 {font-size: 35px}
+    .about_us p {font-size: 18px; width: 100%}
+
+
+}
+
+/*------  max-width:768px   ------*/
+@media screen and (max-width: 768px){
+    .nav {display: none}
+    .nav li {float: none}
+    .nav li a {
+        width: auto;
+        color: black;
+        text-align: center;
+
+    }
+    #touch-menu,#blogs_1, #blogs_2{display: block}
+    #blogs_1 ul {height: auto; }
+    #blogs_1 li  {float: left; display: inline-block; width: 100%; height: auto }
+    #blogs_1 li button { margin: 0}
+    #blogs_1 h4 {text-align: center; width: 100%; background: #FF6347; margin: 0; padding: 2% 0% }
+
+    #blogs_2 li  {float: left; display: inline-block; width: 100%; height: auto; }
+    #blogs_2 ul {height: auto; }
+    #blogs_2 li a{float: none}
+    #blogs_2 li button { margin: 0;  }
+
+    #name h1 {font-size: 27px}
+    #text span{font-size: 40px;margin: 40% 0%;}
+    #text {width: auto ; height: auto}
+    #text p{ font-size: 17px ; }
+    #meeting_schedule {width: 70%;height: auto; margin: 20% 15%; letter-spacing: 0}
+    #meeting_schedule h2 {font-size: 20px}
+    #meeting_schedule h3 {font-size: 19px}
+
+    .nav1 {display: none}
+    .nav1 li {float: none}
+    .nav1 li a {
+        width: auto;
+        color: black;
+        text-align: center;
+    }
+    #touch-menu1,#header_bottom{display: block}
+    #header_bottom ul {height: auto; }
+    #header_bottom li  {float: left; display: inline-block; width: 100%; height: auto }
+    #header_bottom button { margin: 0}
+    .about_us{height: 700px}
+    .about_us h1 {font-size: 27px}
+    .about_us p {font-size: 15px; width: auto}
+
+    .box {width: 33%}
+    .ask_pastor1{float: none }
+
+}
+
+/*------  max-width:600px   ------*/
+@media screen and (max-width: 600px) {
+    .box{width: 80%  }
+    .about_us{height: auto}
+}
+
+/*------  max-width:480px   ------*/
+@media screen and (max-width: 480px) {
+    .nav {display: none;
+    }
+    .nav li {float: none}
+    .nav li a {
+        width: auto;
+        color: black;
+        text-align: center;
+
+    }
+    #touch-menu, #blogs_2{display: block}
+
+    #box { padding: 0 }
+
+    #text span{font-size: 30px;}
+    #meeting_schedule h2 {font-size: 17px}
+    #meeting_schedule h3 {font-size: 16px}
+
+
+    .nav1 {display: none}
+    .nav1 li {float: none}
+    .nav1 li a {
+        width: auto;
+        color: black;
+        text-align: center;
+
+    }
+    #touch-menu1,#header_bottom{display: block}
+    #header_bottom ul {height: auto; }
+    #header_bottom li  {float: left; display: inline-block; width: 100%; height: auto }
+    #header_bottom button { margin: 0}
+
+    .box{width:80%;height: auto}
+    .box_3{height: 100%}
+    .about_us {height: auto}
 }
