@@ -42,16 +42,16 @@
 
         $(document).ready(function(){
             var touch = $('#touch-menu1');
-            var menu = $('.nav1');
+            var menu1 = $('.nav1');
 
             $(touch).on('click', function(e) {
                 e.preventDefault();
-                menu.slideToggle();
+                menu1.slideToggle();
             });
             $(window).resize(function(){
                 var wid = $(window).width();
-                if(wid > 760 && menu.is(':hidden')) {
-                    menu.removeAttr('style');
+                if(wid > 760 && menu1.is(':hidden')) {
+                    menu1.removeAttr('style');
                 }
             });
         });
@@ -174,21 +174,29 @@
         <h1> Трансляція </h1>
         <p> Ви можете переглянути служіння <br>
          або великі заходи церкви в режимі <a href="#"> онлайн </a> </p>
-        <video controls="controls" poster="video/pict.png" >
+        <video class="main" controls="controls" poster="video/pict.png"  >
             <source src="https://www.youtube.com/watch?v=CMnmsaJ6qew">
-
         </video>
-        <h3> Рекомендовані відео </h3>
-        <div class="small_1_video"> <video id="small_1" poster="video/pict.png" >     </video>
+        <div id="btn_date">
+        <h5> 06.07.16 </h5>
+            <p id="view" > Переглянуто 26 разів  </p>
+            <p> Вечірнє Богослужіння церкви Благодаті </p>
 
         </div>
-        <div class="small_2_video"> <video id="small_2" poster="video/pict.png" >     </video>
+        <div id="container_video">
+            <h3> Рекомендовані відео </h3>
 
+         <div class="small_1_video"> <video id="small_1" poster="video/pict.png" >     </video>
+         </div>
+            <div class="small_2_video"> <video id="small_2" poster="video/pict.png" >     </video></div>
+            <div class="small_3_video"> <video id="small_3" poster="video/pict.png" >     </video></div>
+            <!-- <div class="small_2_video"> <video id="small_2" poster="video/pict.png" >     </video>
+
+            </div>
+            <div class="small_3_video"> <video id="small_3" poster="video/pict.png" >     </video>
+
+            </div>   -->
         </div>
-        <div class="small_3_video"> <video id="small_3" poster="video/pict.png" >     </video>
-
-        </div>
-
 
         <div class="ask_pastor2">
           <a href="#">   <button> ЗАПИТАННЯ ПАСТОРУ </button> </a>

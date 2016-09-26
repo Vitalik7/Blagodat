@@ -482,7 +482,110 @@ body{
 /* ------------------ end about_us -----------*/
 
 /* ------------------ broadcasting -----------*/
+.broadcasting {
+    text-align: center;
+    background: #F5F5F5;
+    padding: 4% 0%;
+    height: 780px;
+}
+.broadcasting h1{
+    font-size: 50px;
+}
+.broadcasting p{
+    font-size: 20px;
+    padding: 3% 0%;
+    opacity: 0.5;
+}
+.broadcasting h1:hover{
+    color: red;
+}
+.broadcasting a{
+    text-decoration: none;
+    color: red;
+}
+.broadcasting a:hover {
+    text-decoration: none;
+}
+.broadcasting h4 a{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #FF6347;
+}
+.broadcasting video.main{
+    padding: 0% 6%;
+    position: relative;
+    left: 54px;
+    float: left;
+}
+#btn_date{
+    position: absolute;
+    float: left;
+    margin-top: 320px;
+    margin-left:130px ;
+}
+#btn_date p {
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+    opacity: 1;
+    float: right;
+    font-size: 14px;
+}
+#btn_date p#view {
+    float: right;
+    position: relative;
+    left: 90px;
+    opacity: 0.7;
+}
+#btn_date h5{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .1em 1em;
+    outline: none;
+    border-width: 1px 0;
+    border-style: solid none;
+    border-radius: 15px;
+    background: linear-gradient(#FF6347, #FF6347) #FF6347;
+    transition: 0.2s;
+}
+#container_video {
+    float: left;
+    font-size: 15px;
+}
+#container_video h3{
+    font-size: 25px;
+    margin-top: 0;
+}
+.small_1_video p{
+    opacity: 1;
+    float: right;
+    margin: 0;
+    font-size: 12px;
+}
+.broadcasting video#small_1{
+    width: auto;
+    height:93px;
+    margin-right: 80px;
+}
+.broadcasting video#small_2{
+    width: auto;
+    height:93px;
+    margin-right: 80px;
+}
+.broadcasting video#small_3{
+    width: auto;
+    height:93px;
+    margin-right: 80px;
+}
 
+
+
+
+
+
+/*
 .broadcasting{
     text-align: center;
     background: #F5F5F5;
@@ -810,7 +913,7 @@ form textarea{
 /* ------------------ end contact -----------*/
 
 
-/*------------ media----------------*/
+/*---------------------------------------- media---------------------------------------*/
 
 /*------  max-width:1016px   ------*/
 @media screen and (max-width:1016px){
@@ -854,12 +957,13 @@ form textarea{
     .about_us h1 {font-size: 35px}
     .about_us p {font-size: 18px; width: 100%}
 
+    #btn{ margin: 0% 1% }
 
 }
 
 /*------  max-width:768px   ------*/
 @media screen and (max-width: 768px){
-    .nav {display: none}
+    .nav {display: none; }
     .nav li {float: none}
     .nav li a {
         width: auto;
@@ -897,19 +1001,25 @@ form textarea{
     #header_bottom ul {height: auto; }
     #header_bottom li  {float: left; display: inline-block; width: 100%; height: auto }
     #header_bottom button { margin: 0}
-    .about_us{height: 700px}
+    .about_us{height: 670px}
     .about_us h1 {font-size: 27px}
     .about_us p {font-size: 15px; width: auto}
 
     .box {width: 33%}
-    .ask_pastor1{float: none }
+    .ask_pastor1{position: relative;  top: 0;  padding: 0; margin: 9% 8%; }
 
+    #btn{ margin: 0% 4%; }
+    #btn button { margin: -20% 0% }
 }
 
 /*------  max-width:600px   ------*/
 @media screen and (max-width: 600px) {
     .box{width: 80%  }
-    .about_us{height: auto}
+    .about_us{height: 1300px}
+    #btn{margin: 0% 8%}
+}
+@media screen and (max-width: 530px) {
+    .about_us{height: 1200px}
 }
 
 /*------  max-width:480px   ------*/
@@ -947,5 +1057,6 @@ form textarea{
 
     .box{width:80%;height: auto}
     .box_3{height: 100%}
-    .about_us {height: auto}
+    .about_us {height: 1100px}
+    #btn{margin: 0% 10%}
 }
